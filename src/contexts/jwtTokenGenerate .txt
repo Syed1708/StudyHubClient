@@ -1,0 +1,11 @@
+Summary flow:
+
+    User logs in via Firebase (social or email/pass).
+
+    onAuthStateChanged triggers → calls issueJwtToken(firebaseUser) → backend validates Firebase token → backend creates server JWT → sends back JWT token.
+
+    Store JWT token locally & as cookie.
+
+    Use JWT token in Authorization header via axios interceptor for secure backend requests.
+
+    Backend routes with verifyJwtToken middleware check the JWT token for authentication.
