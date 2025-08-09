@@ -2,7 +2,6 @@
 
 A modern, full-stack MERN web application for managing **online study sessions**, featuring multi-role dashboards, session booking, resource sharing, and real-time analytics.
 
-**Assignment Variant:** `assignment12_category_018`  
 **Admin Credentials:**  
 - 📧 **Email:** `admin123@gmail.com`  
 - 🔐 **Password:** `Admin123`  
