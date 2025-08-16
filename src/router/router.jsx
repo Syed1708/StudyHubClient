@@ -31,9 +31,12 @@ import SessionDetails from "../pages/SessionDetails";
 import BookedSessionDetails from "../pages/Dashboard/Student/BookedSessionDetails";
 import SessionsPage from "../pages/SessionsPage";
 import About from "../pages/About";
+import Privacy from "../pages/PrivacyPolicy";
+import Terms from "../pages/TermsAndConditions";
 import Payment from "../pages/Payment/Payment";
 import ProfilePage from "../auth/Profile";
 import RejectedSessions from "../pages/Dashboard/Tutor/RejectedSessions";
+import TermsAndConditions from "../pages/TermsAndConditions";
 
 export const router = createBrowserRouter([
   {
@@ -53,6 +56,18 @@ export const router = createBrowserRouter([
       {
         path: "/register",
         Component: Register,
+      },
+      {
+        path: "/about",
+        Component: About,
+      },
+      {
+        path: "/privacy",
+        Component: Privacy,
+      },
+      {
+        path: "/terms",
+        Component: TermsAndConditions,
       },
       {
         path: "/about",

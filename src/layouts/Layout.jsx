@@ -57,7 +57,7 @@ const Layout = () => {
     );
   }
   return (
-    <div className=" w-11/12 mx-auto">
+    <div className=" mx-auto">
       <Navbar />
       <DynamicTitle />
       <main className=" bg-base-50 shadow-sm">

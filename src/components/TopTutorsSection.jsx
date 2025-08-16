@@ -66,13 +66,18 @@ const tutors = [
 export default function TopTutorsSection() {
   return (
     <section className="py-14 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-center text-blue-700 mb-10">
-          🌟 Top Tutors
-        </h2>
+      <div className=" px-4">
+        <div className="text-center mb-10">
+          <h2 className="text-4xl font-extrabold text-blue-800 inline-block relative after:content-[''] after:block after:h-1 after:w-16 after:bg-blue-500 after:mx-auto after:mt-2">
+            🌟 Top Tutors
+          </h2>
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {tutors.map((tutor) => (
-            <div key={tutor.id} className="bg-white shadow border border-gray-200 rounded-xl p-5 transition hover:shadow-md">
+            <div
+              key={tutor.id}
+              className="bg-white shadow border border-gray-200 rounded-xl p-5 transition hover:shadow-md"
+            >
               <div className="flex items-center gap-4 mb-4">
                 <img
                   src={tutor.avatar}
@@ -80,7 +85,9 @@ export default function TopTutorsSection() {
                   className="w-16 h-16 rounded-full object-cover ring-2 ring-blue-500"
                 />
                 <div>
-                  <h3 className="text-lg font-semibold text-blue-700">{tutor.name}</h3>
+                  <h3 className="text-lg font-semibold text-blue-700">
+                    {tutor.name}
+                  </h3>
                   <p className="text-sm text-gray-500">{tutor.expertise}</p>
                 </div>
               </div>

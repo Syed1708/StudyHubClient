@@ -29,7 +29,6 @@ const Footer = () => {
             <li><a href="/sessions" className="hover:text-blue-800 transition">All Sessions</a></li>
             <li><a href="/dashboard" className="hover:text-blue-800 transition">Dashboard</a></li>
             <li><a href="/about" className="hover:text-blue-800 transition">About Us</a></li>
-            <li><a href="/contact" className="hover:text-blue-800 transition">Contact</a></li>
           </ul>
         </div>
 
@@ -37,7 +36,6 @@ const Footer = () => {
         <div>
           <h4 className="text-lg font-semibold text-blue-600 mb-3">Resources</h4>
           <ul className="space-y-2 text-sm">
-            <li><a href="/faq" className="hover:text-blue-800 transition">FAQs</a></li>
             <li><a href="/privacy" className="hover:text-blue-800 transition">Privacy Policy</a></li>
             <li><a href="/terms" className="hover:text-blue-800 transition">Terms & Conditions</a></li>
           </ul>
@@ -53,17 +51,17 @@ const Footer = () => {
             </p>
             <p className="flex items-center gap-2">
               <Phone className="w-4 h-4 text-blue-600" />
-              +1 (800) 123-4567
+              +33626763485
             </p>
           </div>
           <div className="flex gap-4 mt-4">
-            <a href="#" aria-label="Facebook">
+            <a href="https://www.facebook.com/" target="_black" aria-label="Facebook">
               <Facebook className="text-blue-600 hover:text-blue-800 transition" size={20} />
             </a>
-            <a href="#" aria-label="Twitter">
+            <a href="https://x.com/" target="_black" aria-label="Twitter">
               <Twitter className="text-blue-600 hover:text-blue-800 transition" size={20} />
             </a>
-            <a href="#" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/" target="_black" aria-label="LinkedIn">
               <Linkedin className="text-blue-600 hover:text-blue-800 transition" size={20} />
             </a>
           </div>
