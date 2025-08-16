@@ -4,29 +4,34 @@ const recentCoursesData = [
   {
     id: 1,
     title: "Full-Stack Web Development",
-    image: "https://source.unsplash.com/400x300/?web,development",
+    image:
+      "https://images.unsplash.com/photo-1529101091764-c3526daf38fe?auto=format&fit=crop&w=800&q=80",
     description: "Learn to build complete web applications with MERN stack.",
     price: 89,
   },
-  {
-    id: 2,
-    title: "Advanced Python Programming",
-    image: "https://source.unsplash.com/400x300/?python,programming",
-    description:
-      "Take your Python skills to the next level with advanced concepts.",
-    price: 69,
-  },
+{
+  id: 2,
+  title: "Advanced Python Programming",
+  image:
+    "https://images.unsplash.com/photo-1624953587687-daf255b6b80a?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  description:
+    "Take your Python skills to the next level with advanced concepts.",
+  price: 69,
+}
+,
   {
     id: 3,
     title: "Cloud Computing with AWS",
-    image: "https://source.unsplash.com/400x300/?cloud,aws",
+    image:
+      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
     description: "Master cloud services and deployment using AWS.",
     price: 99,
   },
   {
     id: 4,
     title: "Cybersecurity Essentials",
-    image: "https://source.unsplash.com/400x300/?cybersecurity,security",
+    image:
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
     description: "Understand threats, protection methods, and ethical hacking.",
     price: 79,
   },
@@ -37,11 +42,12 @@ const RecentCourses = () => {
     <div>
       {/* Heading */}
       <div className="text-center mb-10">
-        <div className="text-center mb-10">
-          <h2 className="text-4xl font-extrabold text-blue-800 inline-block relative after:content-[''] after:block after:h-1 after:w-16 after:bg-blue-500 after:mx-auto after:mt-2">
-            Recent Courses
-          </h2>
-        </div>
+        <h2 className="text-4xl font-extrabold text-blue-800 inline-block relative after:content-[''] after:block after:h-1 after:w-16 after:bg-blue-500 after:mx-auto after:mt-2">
+          Recent Courses
+        </h2>
+        <p className="text-gray-600 dark:text-gray-300">
+          Check out our latest course additions
+        </p>
       </div>
 
       {/* Grid */}
@@ -66,12 +72,12 @@ const RecentCourses = () => {
               <p className="text-gray-600 dark:text-gray-300 text-sm flex-1">
                 {course.description}
               </p>
-              <div className="mt-4 flex justify-between items-center">
+              {/* <div className="mt-4 flex justify-between items-center">
                 <span className="text-blue-600 font-bold">${course.price}</span>
                 <button className="px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700 text-sm">
                   See More
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         ))}

@@ -4,7 +4,8 @@ const blogPosts = [
   {
     id: 1,
     title: "5 Study Habits That Will Boost Your Productivity",
-    image: "https://source.unsplash.com/600x400/?study,desk",
+    image:
+      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80",
     excerpt:
       "Learn the most effective habits to enhance focus, improve memory retention, and make your study sessions more efficient.",
     date: "August 10, 2025",
@@ -13,7 +14,8 @@ const blogPosts = [
   {
     id: 2,
     title: "How to Choose the Right Online Course for You",
-    image: "https://source.unsplash.com/600x400/?online-learning",
+    image:
+      "https://images.unsplash.com/photo-1616531770192-6eaea74c2456?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     excerpt:
       "Choosing the right online course can be overwhelming. Here are key factors to consider for your learning journey.",
     date: "August 5, 2025",
@@ -22,7 +24,8 @@ const blogPosts = [
   {
     id: 3,
     title: "Top 7 Tools Every Student Should Know About",
-    image: "https://source.unsplash.com/600x400/?education,tools",
+    image:
+      "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80",
     excerpt:
       "Discover powerful apps and tools that can help you manage your time, take better notes, and collaborate effectively.",
     date: "July 28, 2025",
@@ -33,12 +36,13 @@ const blogPosts = [
 const BlogPreview = () => {
   return (
     <div className="bg-gray-50 dark:bg-gray-900 py-12 rounded-xl">
-      <div className=" mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <h2 className="text-4xl font-extrabold text-blue-800 inline-block relative after:content-[''] after:block after:h-1 after:w-16 after:bg-blue-500 after:mx-auto after:mt-2">
             Our Blogs
           </h2>
         </div>
+
         {/* Grid */}
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {blogPosts.map((post) => (
@@ -67,12 +71,12 @@ const BlogPreview = () => {
                 </div>
 
                 {/* Button */}
-                <a
+                {/* <a
                   href={`/blog/${post.id}`}
                   className="mt-4 inline-block px-4 py-2 text-sm bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
                 >
                   Read More
-                </a>
+                </a> */}
               </div>
             </div>
           ))}
